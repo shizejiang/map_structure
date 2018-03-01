@@ -1,0 +1,29 @@
+#包含所有的地面标识(包括停车线、人行横道、停车位等)
+GENERAL_START
+.element_name=lane_marker	#*元素名称
+.author=zhyan				#*数据发布者姓名
+.timestamp=2018-01-03		#*日期
+.version=1.0				#*数据版本号
+GENERAL_END
+
+LANE_MARKER_SECTION_START
+.id=1					#*Section编号
+.host_lat=30.12			#*本Section下的原点(当前车辆)纬度
+.host_lon=120.30		#*本Section下的原点(当前车辆)经度
+.host_alt=10			# 本Section下的原点(当前车辆)海拔高度(单位m)
+.host_heading=10.23		#*本Section下的原点(当前车辆)航向角，与北的夹角，按顺时针旋转增加
+.host_position_accu=0.1 #*本Section下的原点(当前车辆)位置精度
+.host_heading_accu=0.2  #*本Section下的原点(当前车辆)航向角精度
+.describe=xxx			#*路面标识描述，比如：待转区、左右直行箭头、实线倒三角、障碍物标线、视觉减速提示线、棱形标识、等
+.marker_tag_name1=xxx
+.marker_tag_name2=xxx
+NODE_START				# 本Section下，node1--->node2---->node3---->连成一条线
+.node_id=1				#*本Section下第一个node
+..x=10					#*第一个node的x坐标(当前车辆位置为原点，右方向为+x，前方为+y，上方为+z，x-y平面与大地水平)(单位m)
+..y=20  				#*第一个node的y坐标
+..z=5					#*第一个node的z坐标
+..node_tag_name1=xxx	# 属于node1的tag1
+
+NODE_END
+
+LANE_MARKER_SECTION_END
