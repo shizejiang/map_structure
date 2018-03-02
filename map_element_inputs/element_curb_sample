@@ -7,10 +7,10 @@ GENERAL_END
 
 CURB_SECTION_START
 .id=1					
-.host_lat=30.12			
-.host_lon=120.30		
-.host_alt=10			
-.host_heading=10.23		
+.host_lat=31.2897208218971		
+.host_lon=121.2040509447937		
+.host_alt=23.4734878540039			
+.host_heading=0.0061000000000	
 .host_position_accu=0.1 
 .host_heading_accu=0.2  
 .section_tag_name1=xxx	
@@ -39,8 +39,6 @@ CURB_SECTION_START
 .host_heading=10.23
 .host_position_accu=0.1
 .host_heading_accu=0.2
-NODE_START
-...
-NODE_END
+
 CURB_SECTION_END
 
