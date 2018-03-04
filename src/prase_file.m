@@ -45,12 +45,12 @@ if res==-1
 end
 
 %% find SECTION info & parsing
-section_exist = 1;
-while(section_exist)
-    
-    
-    
-end
+% section_exist = 1;
+% while(section_exist)
+%     
+%     
+%     
+% end
 
 
 
