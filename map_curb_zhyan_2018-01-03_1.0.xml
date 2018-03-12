@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<osm generator="JOSM" version="0.6">
+   <node id="1" lat="30.1199405255092" lon="120.299778288163" timestamp="2018-01-03" user="zhyan" version="1">
+      <tag k="z" v="5"/>
+      <tag k="h" v="0.2"/>
+      <tag k="node_tag_name1" v="xxx"/>
+      <tag k="node_tag_name2" v="xxx"/>
+   </node>
+   <node id="2" lat="30.1199433891187" lon="120.299631578389" timestamp="2018-01-03" user="zhyan" version="1">
+      <tag k="z" v="5"/>
+   </node>
+   <node id="3" lat="30.1199433891187" lon="120.299631578389" timestamp="2018-01-03" user="zhyan" version="1">
+      <tag k="z" v="5"/>
+      <tag k="h" v="0.2"/>
+      <tag k="node_tag_name1" v="xxx"/>
+      <tag k="node_tag_name2" v="xxx"/>
+   </node>
+   <node id="4" lat="30.1199491158463" lon="120.299338158812" timestamp="2018-01-03" user="zhyan" version="1">
+      <tag k="z" v="5"/>
+   </node>
+   <way id="1" timestamp="2018-01-03" user="zhyan" version="1">
+      <tag k="host_alt" v="10"/>
+      <tag k="host_position_accu" v="0.1"/>
+      <tag k="host_head_accu" v="0.2"/>
+      <tag k="section_tag_name1" v="xxx"/>
+      <tag k="section_tag_name2" v="xxx"/>
+      <nd ref="1"/>
+      <nd ref="2"/>
+   </way>
+   <way id="2" timestamp="2018-01-03" user="zhyan" version="1">
+      <tag k="host_alt" v="10"/>
+      <tag k="host_position_accu" v="0.1"/>
+      <tag k="host_head_accu" v="0.2"/>
+      <nd ref="3"/>
+      <nd ref="4"/>
+   </way>
+</osm>

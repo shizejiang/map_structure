@@ -5,24 +5,18 @@ global general_field;
 res=0;
 general_struct=struct();
 
+%if need modify the strings of fields
+%modify the '/*general field*/' meanwhile
 general_field = {'.element_name';
                  '.author';
                  '.timestamp';
                  '.version'};
      
 for i=1:1:length(general_field)
-    k=find_str_line(text(:,2),general_field{i});
-    if isempty(k)
-        disp(['missing field: ''' general_field{i} '''']);
-        res=-1;
-        return;
-    end
-    
-    tline = text{k(1),2};
-    [ field_para, res ] = parse_field( tline );
+    [ text, field_para, res ] = parse_field( text, general_field{i}, 1 );
     if res==-1
-       disp(['missing value of field: ''' general_field{i} '''']);
-       return; 
+        disp(['parse field: ''' general_field{i} ''' error!']);
+        return;
     end
     
     c_field=general_field{i};
